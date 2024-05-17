@@ -1,0 +1,8 @@
+<div *ngFor="let item of tasks" class="task-box">
+  <h3>{{item.title}}</h3>
+  <p><strong>Detail:</strong> {{item.task}}</p>
+  <p><strong>Due Date:</strong> {{item.date}}</p>
+  <p><strong>Priority:</strong> {{item.priority}}</p>
+  <button (click)="editTask(item)">Edit</button>
+  <button (click)="deleteTask(item.id)">Delete</button>
+</div>

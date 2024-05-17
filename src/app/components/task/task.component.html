@@ -1,0 +1,24 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h4>Create task</h4>
+  <br />
+  <input type="text" placeholder="Title" formControlName="title" />
+  <h5 class="red-text" *ngIf="form.get('title')?.invalid && form.get('title')?.touched">Title is required</h5>
+  <br />
+  <textarea placeholder="Task Detail here" formControlName="task"></textarea>
+  <h5 class="red-text" *ngIf="form.get('task')?.invalid && form.get('task')?.touched">Description is required</h5>
+  <br />
+  <input type="date" placeholder="Due Date" formControlName="date" />
+  <h5 class="red-text" *ngIf="form.get('date')?.invalid && form.get('date')?.touched">Date is required</h5>
+  <br /> <br>
+  <select formControlName="priority">
+    <option value="" disabled selected>Select Priority</option>
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+  </select>
+  <h5 class="red-text" *ngIf="form.get('priority')?.invalid && form.get('priority')?.touched">Priority is required</h5>
+  <br /><br>
+  <button class="btn-green" [disabled]="form.invalid">{{ editMode ? 'Update' : 'Create' }}</button>
+</form>
+
+<button (click)="redirectToTaskList()">View Task List</button>

@@ -1,0 +1,29 @@
+Routing:
+        Set up routing in your Angular application by defining routes in app-routing.module.ts.
+        Create components for Home, Tasks, and Task Details views.
+        Use Angular Router to navigate between these views.
+
+    Task Management:
+        Create a Task model with properties like title, description, dueDate, and priority.
+        Implement a service to manage tasks, with methods for adding, editing, deleting, and fetching tasks.
+        Use Angular Forms to create forms for adding and editing tasks, with appropriate form validations.
+        Use reactive forms for better control and validation handling.
+        Validate form inputs to ensure required fields are filled, due date is in the future, etc.
+
+    Drag and Drop:
+    		Have columns for tasks not started, in-progress, completed 
+        Implement drag and drop functionality in the Tasks view to allow users to reorder tasks and to move task between columns.
+
+    Optional Bonus:
+        Implement user authentication using Angular services like AngularFire for Firebase authentication.
+        Use Angular Guards to protect routes and restrict access to authenticated users only.
+        Implement search functionality using Angular Reactive Forms to filter tasks by title or description.
+
+    Additional Requirements:
+        Ensure the application layout is responsive using Angular Flex Layout or CSS Grid.
+        Write clean, modular, and well-commented code following Angular style guide recommendations.
+
+    Deliverables:
+        GitHub repository containing the Angular project code with proper folder structure and commits.
+        README file with instructions on how to run the application locally.
+        Optionally, deploy the application to a hosting service like Heroku or Netlify and include the deployment link in the README.
